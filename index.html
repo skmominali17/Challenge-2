@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img class="star" src="/icon-star.svg" alt="" srcset="" />
+        <img src="/illustration-thank-you.svg" alt="" srcset="" class="addimg">
+        <div class="out">You selected 0 out of 5</div>
+        <h2>How did we do?</h2>
+        <h2 class="addhead">Thank You!</h2>
+        <p id="para">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <p class="addpara">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
+        </p>
+        <div class="rating">
+          <button class="btn" id="one" onclick="colorchange('one') ">1</button>
+          <button class="btn"  id="two"
+          onclick="colorchange('two')">2</button>
+          <button class="btn" id="three"
+          onclick="colorchange('three')">3</button>
+          <button class="btn" id="four"
+          onclick="colorchange('four')">4</button>
+          <button class="btn" id="five"
+          onclick="colorchange('five')">5</button>
+        </div>
+        <button class="submit" id="submit">SUBMIT</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Momin</a>.
+    </div>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
+
+<!-- Rating state start -->
+
+<!-- How did we do?
+
+  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
+
+  1 2 3 4 5
+
+  Submit -->
+
+<!-- Rating state end -->
+
+<!-- Thank you state start -->
+
+<!-- You selected Add rating here out of 5
+
+  Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! -->
+
+<!-- Thank you state end -->
